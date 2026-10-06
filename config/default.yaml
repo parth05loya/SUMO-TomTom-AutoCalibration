@@ -1,0 +1,21 @@
+tomtom:
+  traffic: true
+  travel_mode: car
+  route_type: fastest
+  depart_at: now
+  timeout_seconds: 30
+
+calibration:
+  objective: rmse
+  parameter: speed_factor
+  min_factor: 0.60
+  max_factor: 1.40
+  coarse_steps: 9
+  refine_steps: 5
+  random_seed: 42
+
+sumo:
+  begin: 0
+  end: 3600
+  step_length: 1.0
+  use_libsumo: true
